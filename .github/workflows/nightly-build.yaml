@@ -141,7 +141,7 @@ jobs:
         with:
           images: |
             kubespheredev/devops-tools
-            ghcr.io/${{ github.repository_owner }}/devops-tools
+            ghcr.io/${{ github.repository_owner }}-nightly/devops-tools
           tags: |
             type=schedule,pattern=nightly-{{date 'YYYYMMDD'}}
             type=raw,enable=true,value=nightly-{{date 'YYYYMMDD'}}
